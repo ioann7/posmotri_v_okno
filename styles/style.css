@@ -176,7 +176,8 @@ fieldset {
 .result__video {
   width: 100%;
   height: 100%;
-  object-fit: cover;;
+  object-fit: cover;
+  object-position: center;
 }
 
 .search-form__label {
@@ -187,7 +188,7 @@ fieldset {
   cursor: pointer;
 }
 
-.search-form__label:has(:focus-visible) {
+.search-form__label:has(:focus-visible):not(:active) {
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
@@ -212,7 +213,7 @@ fieldset {
   color: #fff;
   min-width: 225px;
   min-height: 27px;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
 }
@@ -257,7 +258,7 @@ fieldset {
 .button {
   background-color: transparent;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
